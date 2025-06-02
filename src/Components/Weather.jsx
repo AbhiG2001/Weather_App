@@ -62,7 +62,7 @@ const Weather1 = () => {
       <div className="bg-white shadow-lg my-10 p-4 rounded w-full max-w-sm">
         <div className="flex">
           {/* input field and search button */}
-          <div className="flex border rounded items-center px-2 py-2 w-full">
+          <div className="flex border-none bg-gray-200 rounded items-center px-2 py-2 w-full">
             <FaSearch className="h-5 w-5" />
             <input
               onKeyUp={handleKeyPress}
@@ -76,7 +76,7 @@ const Weather1 = () => {
           {/* current location button */}
           <button
             onClick={getCurrentLocation}
-            className="px-4 py-2 bg-green-500 text-white ml-2 rounded hover:bg-green-600"
+            className="px-4 py-2 bg-green-500 text-white ml-2 rounded hover:bg-green-700"
           >
             <FaMapMarkerAlt className="w-5 h-5" />
           </button>
@@ -88,19 +88,19 @@ const Weather1 = () => {
         {/* Weather Data Display */}
         {weatherData && (
           <div className="mt-4 text-center">
-            <h2 className="text-xl font-semibold ">
+            <h2 className="text-2xl text-red-500 font-semibold ">
               {weatherData.location.name}
             </h2>
             {/* Weather icon */}
             <img
-              className="mx-auto h-40"
+              className="mx-auto h-50 w-50 "
               src={weatherData.current.condition.icon}
               alt=""
             />
-            <p className="text-lg font-semibold">
+            <p className="text-2xl font-semibold text-orange-600">
               {weatherData.current.temp_c}
             </p>
-            <p className="text-sm capitalize font-semibold">
+            <p className="text-lg capitalize font-semibold">
               {weatherData.current.condition.text}
             </p>
 

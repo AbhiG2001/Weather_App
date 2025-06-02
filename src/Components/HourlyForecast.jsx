@@ -25,7 +25,7 @@ const HourlyForecast = ({hourlyData}) => {
             key={index}
             className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4"
           >
-            <p>{new Date(hour.time).getHours()}:00</p>
+            <p className="text-blue-700">{new Date(hour.time).getHours()}:00</p>
             <img
               src={hour.condition.icon}
               alt="Weather icon"
@@ -37,29 +37,29 @@ const HourlyForecast = ({hourlyData}) => {
         {/* one hour */}
 
         <div className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4">
-          <p>14:00</p>
+          <p className="text-blue-800" >14:00</p>
           <img src={img} alt="Weather icon" className="w-10 mx-auto" />
           <p>5°C</p>
         </div>
         <div className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4">
-          <p>14:00</p>
+          <p className="text-blue-800">14:00</p>
           <img src={img} alt="Weather icon" className="w-10 mx-auto" />
           <p>5°C</p>
         </div>
         <div className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4">
-          <p>14:00</p>
+          <p className="text-blue-800">14:00</p>
           <img src={img} alt="Weather icon" className="w-10 mx-auto" />
           <p>5°C</p>
         </div>
         <div className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4">
-          <p>14:00</p>
+          <p className="text-blue-800">14:00</p>
           <img src={img} alt="Weather icon" className="w-10 mx-auto" />
           <p>5°C</p>
         </div>
         <div className="flex flex-col items-center shadow-lg bg-green-100 py-2 rounded px-4">
-          <p>14:00</p>
-          <img src={img} alt="Weather icon" className="w-10 mx-auto" />
-          <p>5°C</p>
+          <p className="text-blue-800" >14:00</p>
+          <img src={img} alt="Weather icon" className=" w-10 mx-auto" />
+          <p className="">5°C</p>
         </div>
       </div>
       {/* scroll button */}
