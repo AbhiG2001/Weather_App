@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import img from "../images/img.png";
+// import img from "../images/img.png";
 import "./HourlyForecast.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
