@@ -9,8 +9,8 @@ export default defineConfig({
   server:{
     host:'0.0.0.0',
     port: 3002
-  },
-  define:{
-    'import.meta.env.VITE_WEATHER_API_KEY': JSON.stringify(import.meta.env.VITE_WEATHER_API_KEY)
   }
+  // define:{
+  //   'import.meta.env.VITE_WEATHER_API_KEY': JSON.stringify(import.meta.env.VITE_WEATHER_API_KEY)
+  // }
 })

@@ -14,7 +14,7 @@ const Weather1 = () => {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
   const api_key = `${import.meta.env.VITE_WEATHER_API_KEY}`; // Use your own API key here
-  const api_url = "http://api.weatherapi.com/v1/forecast.json";
+  const api_url = `${import.meta.env.VITE_WEATHER_API_URL}`;
   const fetchData = async (query) => {
     // fetch data from the API
     console.log(query)
